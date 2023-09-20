@@ -1,0 +1,16 @@
+/logs
+/node_modules
+/.idea
+config.json
+package-lock.json
+*.swp
+*.bak
+*.tgz
+*.zip
+*.tar
+*.rar
+*.log
+*.vscode
+*.lock
+*.DS_Store
+*.*~

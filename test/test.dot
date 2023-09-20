@@ -1,0 +1,24 @@
+digraph "fsm" {
+  rankdir=TB;
+  "user";
+  "archive";
+  "dep";
+  "bu";
+  "umc";
+  "archive" -> "user" [ label=" reset " ];
+  "dep" -> "user" [ label=" reset " ];
+  "bu" -> "user" [ label=" reset " ];
+  "umc" -> "user" [ label=" reset " ];
+  "user" -> "archive" [ label=" finish " ];
+  "dep" -> "archive" [ label=" finish " ];
+  "bu" -> "archive" [ label=" finish " ];
+  "umc" -> "archive" [ label=" finish " ];
+  "user" -> "dep" [ label=" next " ];
+  "dep" -> "bu" [ label=" next " ];
+  "bu" -> "umc" [ label=" next " ];
+  "umc" -> "archive" [ label=" next " ];
+  "user" -> "archive" [ label=" archive " ];
+  "dep" -> "archive" [ label=" archive " ];
+  "bu" -> "archive" [ label=" archive " ];
+  "umc" -> "archive" [ label=" archive " ];
+}

@@ -1,0 +1,19 @@
+{
+  "author": "yinlianhua@sina.cn",
+  "license": "MIT",
+  "name": "js-flow-engine",
+  "version": "1.0.0",
+  "description": "JS Flow Engine",
+  "main": "flow.js",
+  "scripts": {
+    "test" : "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yinlianhua/js-flow-engine.git"
+  },
+  "dependencies": {
+    "moment"     : "2.29.4",
+    "underscore" : "1.13.6"
+  }
+}
